@@ -49,3 +49,29 @@ num_hex = 'f01'
 print(int(num_bin, 2))
 print(int(num_tri, 3))
 print(int(num_hex, 16))
+
+
+# срезы
+data = '1234567'
+# взятие 2х первых цифр
+print(data[:2])
+# взятие без 2х первых цифр
+print(data[2:])
+# взятие 2х последних цифр
+print(data[-2:])
+# взятие без 2х первых цифр
+print(data[:-2])
+
+# сумма цифр числа
+# двоичная сс
+num_1 = '1010'
+sum_1 = num_1.count('1')
+
+# любая сс до 10 включительно
+num_2 = '1210'
+sum_2 = sum(map(int, num_2))
+
+# любая сс до 36 включительно
+num_3 = 'AF5'
+sum_3 = sum(map(lambda x: int(x, 36), num_3))
+
