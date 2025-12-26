@@ -20,17 +20,32 @@
 # 10. or
 
 # решение через лесенку
-print('a b c d')
-for a in 0, 1:
-    for b in range(2):
-        for c in [0, 1]:
-            for d in (0, 1):
-                f = (not a and not b) or (b == c) or d
-                # все строки истинны
-                if f:
-                    print(a, b, c, d)
-                # все строки ложны
-                if not f:
-                    print(a, b, c, d)
-                # строки вперемешку
-                print(a, b, c, d)
+# print('a b c d')
+# for a in 0, 1:
+#     for b in range(2):
+#         for c in [0, 1]:
+#             for d in (0, 1):
+#                 f = (not a and not b) or (b == c) or d
+#                 # все строки истинны
+#                 if f:
+#                     print(a, b, c, d)
+#                 # все строки ложны
+#                 if not f:
+#                     print(a, b, c, d)
+#                 # строки вперемешку
+#                 print(a, b, c, d)
+                
+                
+# args
+def f1(a, b, c):
+    return a + b + c
+
+test1 = [1, 2, 3]
+print(f1(*test1))
+
+#kwargs
+def f2(a, b):
+    return a / b
+
+test2 = {'b': 7, 'a': 2}
+print(f2(**test2))
