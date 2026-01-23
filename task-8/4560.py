@@ -4,8 +4,8 @@ from itertools import permutations
 cnt = 0
 for val in set(permutations('ТИХОРЕЦК', r=4)):
     val = ''.join(val)
-    cond1 = sum([1 for symb in val[:4] if symb == 'ТИХО'[val.index(symb)]]) == 2
-    cond1_1 = sum([1 for i in range(len(val[:4])) if val[i] == 'ТИХО'[i]]) == 2
+    cond1 = sum([1 for symb in val if symb == 'ТИХО'[val.index(symb)]]) == 2
+    cond1_1 = sum([1 for i in range(4) if val[i] == 'ТИХО'[i]]) == 2
     for i in 'ИОЕ':
         val = val.replace(i, '*')
     cond2 = val.count('*') == 2
