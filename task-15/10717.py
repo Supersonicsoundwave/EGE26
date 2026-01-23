@@ -1,7 +1,5 @@
 def treug(n, m, k):
-    if n + m > k and n + k > m and m + k > n:
-        return True
-    return False
+    return n + m > k and n + k > m and m + k > n
 
 
 def f(x):
