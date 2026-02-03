@@ -6,7 +6,7 @@ def f(num):
     if sum(1 for x in d if x % 2 != 0) == 3:
         return [x for x in d if x % 2 != 0]
     else:
-        return 0
+        return []
 
 
 for n in range(18782, 18822 + 1):
