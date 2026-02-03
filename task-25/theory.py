@@ -27,3 +27,13 @@ for l in range(0, 4):
         val = '1234' + ''.join(val) + '7'
         if int(val) % 141 == 0:
             print(val, int(val) // 141)
+
+# проверка чисел на простоту
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** .5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
