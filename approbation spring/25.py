@@ -1,7 +1,13 @@
 def f(num):
+    d11 = set()
     for i in range(2, int(num ** .5) + 1):
-        if num % i == 0 and i != 11 and i % 100 == 11:
-            return i
+        if num % i == 0:
+            if i % 100 == 11 and i != 11:
+                d11 |= {i}
+            if num // i % 100 == 11 and num // i != 11:
+                d11 |= {num // i}
+    if d11:
+        return min(d11)
     return 0
 
 
