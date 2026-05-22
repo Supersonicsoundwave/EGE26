@@ -8,3 +8,9 @@ for i in 'BCDFGH':
 data = data.replace('!!*', '!!* !!*')
 data = data.split()
 print(len(max(data, key=len)))
+
+######################################################
+
+G = r'[AE]'
+S = r'[BCDFGH]'
+pattern = rf'(?<={S}{S}{G}).+?(?={S + S + G})'
