@@ -1,8 +1,8 @@
 import re
 
 
-# with open(r'files\2405.txt') as file:
-#     data = file.readline()
+# with open(r'files\2405.txt') as files:
+#     data = files.readline()
 #
 # pattern = r'(LMN|MN|N)?(KLMN)+(KLM|KL|K)?'
 # matches = re.finditer(pattern, data)
@@ -10,8 +10,8 @@ import re
 # print(len(max(res, key=len)))  # 182
 
 
-# with open(r'files\2416.txt') as file:
-#     data = file.readline()
+# with open(r'files\2416.txt') as files:
+#     data = files.readline()
 #
 # pattern = r'([AE][BCD])+'
 # matches = re.finditer(pattern, data)
@@ -19,8 +19,8 @@ import re
 # print(len(max(res, key=len)) // 2)  # 202
 
 
-# with open(r'files\2402.txt') as file:
-#     data = file.readline()
+# with open(r'files\2402.txt') as files:
+#     data = files.readline()
 #
 # number = r'(([789][0789]*)|0)'
 # pattern = fr'({number}[\*-])+{number}'
@@ -29,8 +29,8 @@ import re
 # print(len(max(res, key=len)))  # 111
 
 
-# with open(r'files\2418.txt') as file:
-#     data = file.readline()
+# with open(r'files\2418.txt') as files:
+#     data = files.readline()
 #
 # number = r'([1-9][0-9]*[02468]|[02468])'
 # pattern = fr'({number}[\*+])+{number}'

@@ -27,8 +27,8 @@ with open(r'.\files\24_25361.txt') as file:
 # print(max_len)
 
 # способ 1
-# with open(r'.\files\24_25361.txt') as file:
-#     data = file.readline()
+# with open(r'.\files\24_25361.txt') as files:
+#     data = files.readline()
 #
 #
 # ans = 0

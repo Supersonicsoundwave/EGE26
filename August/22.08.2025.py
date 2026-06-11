@@ -1,8 +1,8 @@
 import re
 
 
-# with open('files\\24-334.txt') as file:
-#     data = file.readline()
+# with open('files\\24-334.txt') as files:
+#     data = files.readline()
 #
 # pattern = r'[1-9AB][0-9AB]*[02468A]'
 # matches = re.finditer(pattern, data)

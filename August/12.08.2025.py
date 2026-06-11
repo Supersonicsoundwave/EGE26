@@ -1,8 +1,8 @@
 # import re
 #
 #
-# with open('reg_exp_task_1.txt') as file:
-#     text = file.readline()
+# with open('reg_exp_task_1.txt') as files:
+#     text = files.readline()
 #
 #
 # pattern = r'\d+'
@@ -13,8 +13,8 @@
 # import re
 #
 #
-# with open('reg_exp_task_2.txt') as file:
-#     text = file.readline()
+# with open('reg_exp_task_2.txt') as files:
+#     text = files.readline()
 #
 # pattern = r'-?\d+\.?\d*'
 # res = re.findall(pattern, text)
@@ -33,8 +33,8 @@
 # import re
 #
 #
-# with open('reg_exp_task_4.txt') as file:
-#     text = file.readline()
+# with open('reg_exp_task_4.txt') as files:
+#     text = files.readline()
 #
 # pattern = r'\w+@\w+\.[a-z]{2,}'
 # res = re.findall(pattern, text)
