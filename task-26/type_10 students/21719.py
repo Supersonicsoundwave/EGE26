@@ -19,5 +19,5 @@ for ID in students:
             cnt = 1
         ans += [(cnt, ID)]
 
-print(max(ans, key=lambda x: (x[0], -x[1])))
+print(*max(ans, key=lambda x: (x[0], -x[1]))[::-1])
 
